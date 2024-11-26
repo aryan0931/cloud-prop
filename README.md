@@ -1,10 +1,6 @@
 # **Cloud-Robotics Dataset for Single Task Learning**  
 
-**Authors:** Fudan University, Huawei  
-
-Edge computing and AI are reshaping how devices operate in real-time, making **single task learning** a cornerstone for achieving specialization in robotic applications. With edge devices' growing performance and deployment, single task learning—focused on mastering one well-defined objective—is gaining traction for applications requiring high precision and reliability.  
-
-Huawei's open-source **KubeEdge-Ianvs** project has laid the foundation for benchmarking and optimizing distributed collaborative AI systems. Building on this, Fudan University and Huawei introduce the **Cloud-Robotics Dataset**, designed for single task learning, particularly semantic segmentation in robotic applications.  
+Edge computing and AI are reshaping how devices operate in real-time, making **single task learning** a cornerstone for achieving specialization in robotic applications. With edge devices' growing performance and deployment, single task learning—focused on mastering one well-defined objective—is gaining traction for applications requiring high precision and reliability.   
 
 ---
 
@@ -51,13 +47,13 @@ The **Cloud-Robotics Dataset** delivers data tailored for single task learning i
 
 ### **Why Use the Cloud-Robotics Dataset?**  
 
-| **Feature**               | **Cloud-Robotics**         | **Cityscapes**         |  
-|----------------------------|----------------------------|------------------------|  
-| **Focus**                 | Semantic Segmentation      | Semantic Segmentation  |  
-| **Task Scope**            | Single Task Learning       | Generalized Tasks      |  
-| **Collection Device**     | Robotic Dog               | Dashcam                |  
-| **Environment**           | Industrial Park           | Urban Streets          |  
-| **Unique Focus**          | Ramps, Stairs, Curbs       | Roads, Vehicles        |  
+| **Feature**               | **Cloud-Robotics**       
+|----------------------------|----------------------- 
+| **Focus**                 | Semantic Segmentation        
+| **Task Scope**            | Single Task Learning        
+| **Collection Device**     | Robotic Dog                
+| **Environment**           | Industrial Park             
+| **Unique Focus**          | Ramps, Stairs, Curbs      
 
 Unlike general-purpose datasets like Cityscapes, the Cloud-Robotics Dataset is specifically designed for robots operating in industrial environments, offering a more relevant and specialized approach to single task learning.
 
@@ -111,12 +107,5 @@ For robots performing routine inspections in industrial facilities:
 - Supports the growth of specialized datasets for single task learning.  
 
 ---
-
-## **Getting Started**  
-
-Download the Cloud-Robotics Dataset and start building robust models for semantic segmentation tailored for single task learning.  
-
-- **Repository**: [GitHub - KubeEdge-Ianvs](https://github.com/kubeedge/ianvs)  
-- **Documentation**: [Official Page](https://kubeedge-ianvs.github.io/)  
 
 By focusing on single task learning, the Cloud-Robotics Dataset empowers developers to achieve unmatched precision and robustness in robotics AI. Get started today and shape the future of edge-computing AI!  
