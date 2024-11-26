@@ -73,9 +73,28 @@ The dataset includes seven main categories with 30 detailed classes:
 | **Nature**       | Vegetation, Terrain                   |  
 | **Sky**          | Sky                                   |  
 
- Dataset/
-├── 1280x760
-│   ├── gtFine
+
+## **Features and Structure**  
+
+The dataset is structured as follows:  
+
+```
+Dataset/
+├── 1280x760               # Medium resolution dataset
+│   ├── gtFine             # Ground truth annotations
+│   │   ├── train          # Training annotations
+│   │   ├── test           # Test annotations
+│   │   └── val            # Validation annotations
+│   ├── rgb                # RGB images
+│   │   ├── train          # Training images
+│   │   ├── test           # Test images
+│   │   └── val            # Validation images
+│   └── viz                # Visualization of annotations
+│       ├── train          # Visualized training data
+│       ├── test           # Visualized test data
+│       └── val            # Visualized validation data
+├── 2048x1024              # High resolution dataset
+│   ├── gtFine             # Ground truth annotations
 │   │   ├── train
 │   │   ├── test
 │   │   └── val
@@ -87,8 +106,12 @@ The dataset includes seven main categories with 30 detailed classes:
 │       ├── train
 │       ├── test
 │       └── val
-├── 2048x1024
+├── 640x480                # Low resolution dataset
 │   ├── gtFine
+│   │   ├── train
+│   │   ├── test
+│   │   └── val
+│   ├── json               # JSON metadata
 │   │   ├── train
 │   │   ├── test
 │   │   └── val
@@ -100,23 +123,7 @@ The dataset includes seven main categories with 30 detailed classes:
 │       ├── train
 │       ├── test
 │       └── val
-├── 640x480
-    ├── gtFine
-    │   ├── train
-    │   ├── test
-    │   └── val
-    ├── json
-    │   ├── train
-    │   ├── test
-    │   └── val
-    ├── rgb
-    │   ├── train
-    │   ├── test
-    │   └── val
-    └── viz
-        ├── train
-        ├── test
-        └── val
+```
 
 ---
 
