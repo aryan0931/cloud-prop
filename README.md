@@ -73,7 +73,50 @@ The dataset includes seven main categories with 30 detailed classes:
 | **Nature**       | Vegetation, Terrain                   |  
 | **Sky**          | Sky                                   |  
 
-The images reflect a robotic dog’s perspective, emphasizing features like curbs, inclines, and stairs—crucial for robotic navigation and task execution.  
+ Dataset/
+├── 1280x760
+│   ├── gtFine
+│   │   ├── train
+│   │   ├── test
+│   │   └── val
+│   ├── rgb
+│   │   ├── train
+│   │   ├── test
+│   │   └── val
+│   └── viz
+│       ├── train
+│       ├── test
+│       └── val
+├── 2048x1024
+│   ├── gtFine
+│   │   ├── train
+│   │   ├── test
+│   │   └── val
+│   ├── rgb
+│   │   ├── train
+│   │   ├── test
+│   │   └── val
+│   └── viz
+│       ├── train
+│       ├── test
+│       └── val
+├── 640x480
+    ├── gtFine
+    │   ├── train
+    │   ├── test
+    │   └── val
+    ├── json
+    │   ├── train
+    │   ├── test
+    │   └── val
+    ├── rgb
+    │   ├── train
+    │   ├── test
+    │   └── val
+    └── viz
+        ├── train
+        ├── test
+        └── val
 
 ---
 
