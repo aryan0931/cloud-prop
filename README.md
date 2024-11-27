@@ -34,6 +34,42 @@ Single task learning models are lightweight and computationally efficient, makin
 
 ---
 
+### **Why Ianvs Needs This Proposal**
+
+The integration of the **Cloud-Robotics Dataset** with Ianvs aligns perfectly with Ianvs' goals of advancing cloud-edge collaborative AI for robotics applications. Here’s why this proposal is critical for Ianvs:  
+
+---
+
+### **1. Enhancing Benchmarking for Edge-AI in Robotics**  
+Ianvs focuses on cloud-edge collaboration, where performance evaluation under real-world constraints is essential. The **Cloud-Robotics Dataset** provides:  
+- **Task-Specific Benchmarks**: Tailored for single task learning, offering precision-focused evaluation for tasks like semantic segmentation.  
+- **Real-World Scenarios**: Data from industrial parks under challenging conditions ensures benchmarking is both robust and relevant.  
+- **Edge-Device Compatibility**: The lightweight models trained using this dataset are ideal for deployment and testing on edge devices within Ianvs’ framework.  
+
+---
+
+### **2. Strengthening Single Task Learning in Cloud-Edge Robotics**  
+Ianvs aims to optimize edge-cloud collaboration for machine learning tasks. Single task learning, as proposed here, complements Ianvs by:  
+- **Improving Resource Allocation**: Single task learning models require fewer computational resources, enabling efficient cloud-edge operations.  
+- **Facilitating Specialized Testing**: Models trained on this dataset can be deployed for Ianvs’ automated testing pipelines, ensuring task-specific optimization.  
+- **Accelerating Model Iteration**: The dataset’s focused approach allows Ianvs to test and refine robotic applications with high precision and quick iterations.  
+
+---
+
+### **3. Pioneering Multimodal Extensions for Ianvs**  
+While the dataset focuses on semantic segmentation, its structured design opens pathways for Ianvs to:  
+- **Incorporate Additional Tasks**: Use the dataset as a foundation to explore complementary tasks, such as object detection or depth estimation.  
+- **Build Multimodal Learning Pipelines**: Extend single task learning to multimodal applications, such as combining vision data with LiDAR for advanced edge-cloud applications.  
+
+---
+
+### **4. Promoting Collaboration Between AI and Robotics Communities**  
+Ianvs serves as a hub for collaboration and innovation in AI-driven robotics. This proposal will:  
+- **Bridge AI and Robotics**: By supporting specialized datasets like this, Ianvs fosters a stronger connection between AI researchers and robotics engineers.  
+- **Encourage Open-Source Contributions**: The dataset aligns with Ianvs’ commitment to open-source innovation, inviting contributions to refine and expand its applications.  
+
+---
+
 ## **About the Cloud-Robotics Dataset**  
 
 The **Cloud-Robotics Dataset** delivers data tailored for single task learning in semantic segmentation. By providing pixel-level semantic labels for images, this dataset enhances a robot’s ability to interpret and respond to its surroundings.  
