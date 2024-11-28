@@ -163,6 +163,75 @@ Dataset/
 
 ---
 
+### **Benchmark Suite for Semantic Segmentation Using Proposed Metrics**
+
+The benchmark suite will evaluate the performance of semantic segmentation models using the following components:
+
+---
+
+### **1. Dataset Preparation**
+- **Input**: Segmentation datasets .
+- **Preprocessing**: Resize, normalize, and convert ground truth masks to appropriate class indices.
+
+---
+
+### **2. Model Evaluation Framework**
+- **Evaluation Metrics**:  
+  - **Pixel Accuracy (PA)**: Measures overall pixel classification accuracy.  
+  - **Class Pixel Accuracy (CPA)**: Evaluates per-class accuracy to identify poorly performing classes.  
+  - **Mean Intersection over Union (mIoU)**: Quantifies segmentation overlap, ensuring a balanced evaluation.  
+  - **Frequency Weighted IoU (FWIoU)**: Accounts for class imbalance by weighting IoU by class frequency.  
+
+---
+
+### **3. Code Structure**
+- **Benchmark Script**:  
+  A Python script to calculate metrics and generate reports:
+  
+  ```python
+  from tqdm import tqdm
+  from RFNet.utils.metrics import Evaluator
+  from RFNet.dataloaders import make_data_loader
+
+  def evaluate_model(model, data_loader, num_classes):
+      evaluator = Evaluator(num_classes)
+      for i, (sample, _) in enumerate(tqdm(data_loader)):
+          image, target = sample['image'], sample['label']
+          if torch.cuda.is_available():
+              image, target = image.cuda(), target.cuda()
+          target = target.cpu().numpy()
+
+          # Obtain predictions
+          predictions = model(image).argmax(dim=1).cpu().numpy()
+
+          # Evaluate batch
+          evaluator.add_batch(target, predictions)
+
+      # Compute metrics
+      results = {
+          "Pixel Accuracy": evaluator.Pixel_Accuracy(),
+          "Class Pixel Accuracy": evaluator.Pixel_Accuracy_Class(),
+          "Mean IoU": evaluator.Mean_Intersection_over_Union(),
+          "Frequency Weighted IoU": evaluator.Frequency_Weighted_Intersection_over_Union(),
+      }
+      return results
+  ```
+
+---
+
+### **5. Integration with KubeEdge Ianvs**
+- **TestEnvManager**: Add the benchmark suite as an evaluation framework for segmentation models.  
+- **TestCaseController**: Integrate models and metrics, enabling automated testing. 
+
+---
+
+### **6. Example Pipeline**
+1. **Input**: Model predictions and ground truth labels.  
+2. **Processing**: Compute PA, CPA, mIoU, and FWIoU using the evaluator.  
+3. **Output**: Performance metrics in a structured format (e.g., table, JSON).  
+
+---
+
 ## **Applications of Single Task Learning in Robotics**  
 
 ### **1. Delivery Robots**  
