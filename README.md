@@ -71,9 +71,9 @@ Ianvs serves as a hub for collaboration and innovation in AI-driven robotics. Th
 ---
 
 ### **5. Expands Benchmarking Capabilities**
-Task-Specific Benchmarks: Introduces precise, tailored benchmarks for robotics applications, such as semantic segmentation, enhancing Ianvs’ ability to evaluate AI models for specialized tasks.
-Real-World Testing Scenarios: The dataset includes challenging industrial environments, such as glare, motion blur, and uneven lighting, pushing models to perform under realistic conditions.
-Advanced Metrics: Supports detailed evaluation with metrics like Pixel Accuracy (PA) and Mean Intersection over Union (mIoU), providing a higher standard for testing.
+- **Task-Specific Benchmarks:** Introduces precise, tailored benchmarks for robotics applications, such as semantic segmentation, enhancing Ianvs’ ability to evaluate AI models for specialized tasks.
+- **Real-World Testing Scenarios:** The dataset includes challenging industrial environments, such as glare, motion blur, and uneven lighting, pushing models to perform under realistic conditions.
+- **Advanced Metrics:** Supports detailed evaluation with metrics like Pixel Accuracy (PA) and Mean Intersection over Union (mIoU), providing a higher standard for testing.
 
 ---
 
