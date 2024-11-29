@@ -228,7 +228,24 @@ The benchmark suite will evaluate the performance of semantic segmentation model
 
 ### **5. Enhancing KubeEdge Ianvs with this practical example**
 - **TestEnvManager**: The benchmark suite will act as an example for semantic segmentation models without altering the core testEnvManager or testCaseController. This preserves the framework's integrity while showcasing its applicability to advanced use cases. 
-- **TestCaseController**: Will integrate models and metrics, enabling automated testing for robotic AI applications.  
+- **TestCaseController**: Will integrate models and metrics, enabling automated testing for robotic AI applications.
+
+**examples/Cloud-Robotics Strcture:**
+
+```
+Cloud-Robotics
+├── README.md                        # Main documentation for the project
+└── SingleTask_Learning_Bench
+    ├── benchmarking_job.yaml        # Configuration file for benchmarking jobs
+    ├── test_algorithms              # Directory for algorithm definitions
+    │   ├── base_model.py            # Base class for all test algorithms
+    │   ├── algorithm.yaml           # Algorithm-specific configurations
+    └── test_env                     # Environment setup and evaluation metrics
+        ├── accuracy.py              # Implementation of accuracy-related metrics
+        └── test_env.yaml            # Configuration file for the test environment
+``` 
+
+The **README.md** at the root level will provide an overview of the entire project, including its purpose, structure, and setup instructions.
 
 ---
 
