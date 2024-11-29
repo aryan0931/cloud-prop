@@ -226,7 +226,7 @@ The benchmark suite will evaluate the performance of semantic segmentation model
 
 ---
 
-### **5. Integration with KubeEdge Ianvs**
+### **5. Enhancing KubeEdge Ianvs with this practical example**
 - **TestEnvManager**: The benchmark suite will act as an example for semantic segmentation models without altering the core testEnvManager or testCaseController. This preserves the framework's integrity while showcasing its applicability to advanced use cases. 
 - **TestCaseController**: Will integrate models and metrics, enabling automated testing for robotic AI applications.  
 
