@@ -228,15 +228,7 @@ The benchmark suite will evaluate the performance of semantic segmentation model
 
 ### **5. Integration with KubeEdge Ianvs**
 - **TestEnvManager**: The benchmark suite will act as an example for semantic segmentation models without altering the core testEnvManager or testCaseController. This preserves the framework's integrity while showcasing its applicability to advanced use cases. 
-- **TestCaseController**: Integrate models and metrics, enabling automated testing for robotic AI applications.  
-- **Metrics Location**: All evaluation metrics, including **Pixel Accuracy (PA)**, **Class Pixel Accuracy (CPA)**, **Mean Intersection over Union (mIoU)**, and **Frequency Weighted IoU (FWIoU)**, are implemented in the `accuracy.py` file in the benchmark section github.com/aryan0931/testenv/accuracy.py.
-
----
-
-### **6. Example Pipeline**
-1. **Input**: Model predictions and ground truth labels.  
-2. **Processing**: Compute PA, CPA, mIoU, and FWIoU using the evaluator.  
-3. **Output**: Performance metrics in a structured format (e.g., table, JSON).  
+- **TestCaseController**: Will integrate models and metrics, enabling automated testing for robotic AI applications.  
 
 ---
 
